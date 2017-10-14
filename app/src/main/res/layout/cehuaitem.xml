@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff0000"></LinearLayout>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textColor="@color/text"
+        android:text="功能设置"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textColor="@color/text"
+        android:id="@+id/yejian"
+        android:text="夜间模式"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textColor="@color/text"
+        android:text="定时停止播放"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textColor="@color/text"
+        android:text="退出应用"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textColor="@color/text"
+        android:text="关于波尼音乐"/>
+</LinearLayout>

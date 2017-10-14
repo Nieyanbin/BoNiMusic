@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.bonimusic.view.activity.ParticularsActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#F44336"
+    android:gravity="center_vertical"
+    android:id="@+id/rl">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgback"
+        android:src="@mipmap/ic_action_back"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvname"
+        android:textSize="20sp"
+        android:text="聂雁宾"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_alignBottom="@+id/imgback"
+        android:layout_toRightOf="@+id/imgback"
+        android:layout_toEndOf="@+id/imgback" />
+</RelativeLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imgtu"
+        android:layout_below="@+id/rl" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgtu"
+        android:id="@+id/rv">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gonell"
+        android:layout_below="@+id/imgtu"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <com.example.dell.bonimusic.utils.AudioView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/aw"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvjiazai"
+            android:layout_marginLeft="20dp"
+            android:text="正在努力加载"/>
+    </LinearLayout>
+</RelativeLayout>

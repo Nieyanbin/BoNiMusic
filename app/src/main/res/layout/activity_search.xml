@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.dell.bonimusic.view.activity.SearchActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl"
+        android:background="#F44336"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgback"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_action_back"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et"
+            android:gravity="center_horizontal"
+            android:hint="歌曲名，歌手名"
+            android:layout_alignTop="@+id/imgback"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgsousuo"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_action_search"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:id="@+id/imgll"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"
+       >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gonell"
+            android:orientation="horizontal">
+            <com.example.dell.bonimusic.utils.AudioView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/aw"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvjiazai"
+                android:layout_marginLeft="20dp"
+                android:text="正在努力加载"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+<android.support.v7.widget.RecyclerView
+    android:layout_below="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rv"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_below="@+id/rl"
+        android:layout_centerHorizontal="true"
+        android:text="暂无歌曲"/>
+</RelativeLayout>

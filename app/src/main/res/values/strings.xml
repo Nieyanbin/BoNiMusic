@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">雁哥Music</string>
+
+    <string name="title_activity_drab">DrabActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_drtab">DrtabActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="musiclist_type">
+        <item>#</item>
+        <item>1</item>
+        <item>2</item>
+        <item>#</item>
+        <item>11</item>
+        <item>12</item>
+        <item>16</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>#</item>
+        <item>25</item>
+    </string-array>
+
+    <string-array name="music_title">
+        <item>主打榜单</item>
+        <item>百度热歌榜</item>
+        <item>百度新歌榜</item>
+        <item>分类榜单</item>
+        <item>华语金曲榜</item>
+        <item>欧美金曲榜</item>
+        <item>影视金曲榜</item>
+        <item>情歌对唱榜</item>
+        <item>网络歌曲榜</item>
+        <item>经典老歌榜</item>
+        <item>摇滚榜</item>
+        <item>媒体榜单</item>
+        <item>KTV热歌榜</item>
+    </string-array>
+</resources>
